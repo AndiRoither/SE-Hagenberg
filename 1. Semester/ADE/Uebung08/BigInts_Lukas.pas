@@ -293,6 +293,8 @@ BEGIN
   i:=0;
   sum1 := 0;
   sum2 := 0;
+  a := a^.next;
+  b := b^.next;
   WHILE a <> NIL DO BEGIN
     sum1 := sum1 + (a^.val * (base ** i));
     a := a^.next;
